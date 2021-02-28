@@ -125,7 +125,7 @@ async def heartbeat_task(biliapi: asyncbili,
                         logging.warning(f'{biliapi.name}: 直播{room_id}心跳错误，原因为{data}，退出心跳')
                         break
                 ii += 1
-                logging.info(f'{biliapi.name}: 成功在id为{room_id}的直播间发送第{ii}次心跳')
+                #logging.info(f'{biliapi.name}: 成功在id为{room_id}的直播间发送第{ii}次心跳')
                 await sleep(data) #等待下一次迭代
 
     except TimeoutError:
